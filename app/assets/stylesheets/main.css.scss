@@ -1,0 +1,165 @@
+
+@import 'reset';
+@import 'variables';
+
+
+body {
+  font: 18px $font-stack;
+  line-height: $line-height;
+  color: $primary-color;
+  margin: 0 auto;
+  padding: 0;
+  max-width:100%;
+  background-color: #fff;
+}
+
+h1 {
+  font-family: $font-stack-sec;
+  font-size: $fsize;
+  border-bottom: 3px solid $blue;
+  padding: 100px 0 12px 0;
+  width: 1.875em;
+  text-transform: uppercase;
+  color: $secondary-color;
+  margin-bottom: 80px;
+}
+
+header {
+  background-color: #f6f6f6;
+  height: 6.2em;
+  border-bottom: solid 1px #dfdfdf;
+  width: 100%;
+  position: fixed;
+  z-index:1;
+
+  .content {
+    padding: 0 1em;
+    margin: 0 auto;
+  }
+}
+
+.logo {
+  background: url(logo.png) transparent 0 0;
+  width: 145px;
+  height: 126px;
+  float: left;
+}
+
+nav {
+    float: right;
+    padding-top: 2em;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {display: inline-block;}
+
+    a {
+      display: block;
+      padding: 6px 0;
+      margin: 0 12px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $secondary-color;
+      font-family: $font-stack-sec;
+      letter-spacing: .05em;
+    }
+
+    a:hover {
+      border-bottom: 3px solid $blue;
+    }
+}
+
+.home {
+  height: 39em;
+  background: url(main-banner.png) no-repeat #ededed 0 0;
+  background-position: center;
+}
+
+.connect {
+
+  .content-img {
+  height: 521px;
+  background: url(map.png) no-repeat #d7f5ff 0 0;
+  background-position: center;
+  }
+}
+
+section {
+  text-align: center;
+  margin-bottom: 100px;
+
+  .content {
+    max-width: 63em /* 1008 */;
+    min-height: 39em;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+}
+
+.grid {
+  max-width: 70.125em /* 1122px */;
+  margin: 0 auto;
+  padding: 0;
+
+  ul {
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: .625em /* 10px */;
+  }
+
+  figure {
+    display: block;
+    margin: 0;
+    position: relative;
+    border: 1px solid #efefef;
+  }
+
+  img {
+    max-width: 21.875 /* 350px */;
+    max-height: 233px;
+    display: block;
+    position: relative
+  }
+}
+
+.about, .connect {
+  text-align: left;
+  
+  p {
+    max-width: 44em /* 720px */;
+  }
+}
+
+.contact-labels {
+  font-size: 15px;
+  font-family: $font-stack-sec;
+  color: $secondary-color;
+}
+
+.contact-info {
+  float: right;
+}
+
+.san-francisco {
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 30px;
+  position: relative;
+  top: 387px;
+  color: $secondary-color;
+  font-family: $font-stack-sec;
+  text-align: center;
+}
+
+
+

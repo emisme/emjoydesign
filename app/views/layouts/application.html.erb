@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emjoy Design</title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+  <div class="content">
+    <div class="logo"></div>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Connect</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<%= yield %>
+
+<footer>
+  Hi, I'm a footer
+</footer>
+
+</body>
+</html>
