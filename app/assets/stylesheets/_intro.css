@@ -1,0 +1,325 @@
+.home {
+  font-family: $font-stack-sec;
+  background: url(main-banner.png) no-repeat #ededed 0 0;
+  height: 39em;
+  background-position: center 3.5em;
+  text-transform: uppercase; 
+
+  .intro {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+
+    .emily-thomas {
+      color: $primary-color;
+      font-size: 2.125em;
+      padding: 6.5em 0 0.7em 0;
+      line-height: 1.1em;
+    }
+
+    .portfolio-website {
+      background-color: $primary-color;
+      font-size: 2.5em;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: #f6f6f6;
+      line-height: 1.5em;
+      margin: 0.5em auto;
+
+      .triangle-right {
+        width: 0;
+        height: 0;
+        border-top: 33px solid transparent;
+        border-right: 15px solid #ededed;
+        border-bottom: 33px solid transparent;
+        display: inline-block;
+        float: right;
+      }
+
+      .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 33px solid transparent;
+        border-left: 15px solid #ededed;
+        border-bottom: 33px solid transparent;
+        float: left;
+      }
+    } 
+
+    .simply {
+      font-size: $fsize;
+      color: $primary-color;
+      border: 3px solid $primary-color;
+      font-weight: bold;
+      padding: 5px 13px;
+      display: inline-block;
+      letter-spacing: 0.005em;
+      margin-top: 2em;
+    }
+
+    .circle { 
+      @include border-radius(3px);
+      background-color: $primary-color;
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin: 0 3px;
+    }
+
+    .diamond {
+      width: 0;
+      height: 0;
+      border: 4px solid transparent;
+      border-bottom-color: $primary-color;
+      position: relative;
+      top: -4px;
+      display: inline-block;
+      margin: 0 4px;
+      
+      &:after{
+        content: '';
+        position: absolute;
+        left: -4px;
+        top: 4px;
+        width: 0;
+        height: 0;
+        border: 4px solid transparent;
+        border-top-color: $primary-color;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px){
+
+  .home {
+    font-family: $font-stack-sec;
+    background: url(main-banner.png) no-repeat #ededed 0 0;
+    height: 36em;
+    background-position: center 3.5em;
+    text-transform: uppercase; 
+
+    .intro {
+      width: 70%;
+      text-align: center;
+      margin: 0 auto;
+
+      .emily-thomas {
+        color: $primary-color;
+        font-size: 1.75em;
+        padding: 7.5em 0 0.7em 0;
+        line-height: 1.1em;
+      }
+
+      .portfolio-website {
+        background-color: $primary-color;
+        font-size: 2em;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        color: #f6f6f6;
+        line-height: 1.5em;
+        margin: 0.5em auto;
+
+        .triangle-right {
+          width: 0;
+          height: 0;
+          border-top: 27px solid transparent;
+          border-right: 15px solid #ededed;
+          border-bottom: 27px solid transparent;
+          display: inline-block;
+          float: right;
+        }
+
+        .triangle-left {
+          width: 0;
+          height: 0;
+          border-top: 27px solid transparent;
+          border-left: 15px solid #ededed;
+          border-bottom: 27px solid transparent;
+          float: left;
+        }
+      } 
+
+      .simply {
+        font-size: 14px;
+        color: $primary-color;
+        border: 3px solid $primary-color;
+        font-weight: bold;
+        padding: 5px 13px;
+        display: inline-block;
+        letter-spacing: 0.005em;
+        margin-top: 2em;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px){
+
+  .home {
+    font-family: $font-stack-sec;
+    background: url(main-banner.png) no-repeat #ededed 0 0;
+    height: 33em;
+    background-position: center 3.5em;
+    text-transform: uppercase; 
+
+    .intro {
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+
+      .emily-thomas {
+        color: $primary-color;
+        font-size: 1.5em;
+        padding: 8.5em 0 0.7em 0;
+        line-height: 1.1em;
+      }
+
+      .portfolio-website {
+        background-color: $primary-color;
+        font-size: 2em;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        color: #f6f6f6;
+        line-height: 1.5em;
+        margin: 0.5em auto;
+
+        .triangle-right {
+          width: 0;
+          height: 0;
+          border-top: 26px solid transparent;
+          border-right: 15px solid #ededed;
+          border-bottom: 26px solid transparent;
+          display: inline-block;
+          float: right;
+        }
+
+        .triangle-left {
+          width: 0;
+          height: 0;
+          border-top: 26px solid transparent;
+          border-left: 15px solid #ededed;
+          border-bottom: 26px solid transparent;
+          float: left;
+        }
+      } 
+
+      .simply {
+        font-size: 14px;
+        color: $primary-color;
+        border: 3px solid $primary-color;
+        font-weight: bold;
+        padding: 5px 13px;
+        display: inline-block;
+        letter-spacing: 0.005em;
+        margin-top: 2em;
+      }
+
+      .circle { 
+        @include border-radius(3px);
+        background-color: $primary-color;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin: 0 3px;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px){
+
+  .home {
+    font-family: $font-stack-sec;
+    background: url(main-banner.png) no-repeat #ededed 0 0;
+    height: 30em;
+    background-position: center 3.5em;
+    text-transform: uppercase; 
+
+    .intro {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+
+      .emily-thomas {
+        color: $primary-color;
+        font-size: 1.3em;
+        padding: 10em 0 0.25em 0;
+        line-height: 1.1em;
+      }
+
+      .portfolio-website {
+        background-color: $primary-color;
+        font-size: 1.4em;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        color: #f6f6f6;
+        line-height: 1.5em;
+        margin: 0.5em auto;
+
+        .triangle-right {
+          width: 0;
+          height: 0;
+          border-top: 18px solid transparent;
+          border-right: 8px solid #ededed;
+          border-bottom: 18px solid transparent;
+          display: inline-block;
+          float: right;
+        }
+
+        .triangle-left {
+          width: 0;
+          height: 0;
+          border-top: 18px solid transparent;
+          border-left: 8px solid #ededed;
+          border-bottom: 18px solid transparent;
+          float: left;
+        }
+      } 
+
+      .simply {
+        font-size: 13px;
+        color: $primary-color;
+        border: 3px solid $primary-color;
+        font-weight: bold;
+        padding: 3px 9px;
+        display: inline-block;
+        letter-spacing: 0.005em;
+        margin-top: 1.5em;
+      }
+
+      .circle { 
+        @include border-radius(3px);
+        background-color: $primary-color;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin: 0 3px;
+      }
+
+      .diamond {
+        width: 0;
+        height: 0;
+        border: 4px solid transparent;
+        border-bottom-color: $primary-color;
+        position: relative;
+        top: -4px;
+        display: inline-block;
+        margin: 0 4px;
+        
+        &:after{
+          content: '';
+          position: absolute;
+          left: -4px;
+          top: 4px;
+          width: 0;
+          height: 0;
+          border: 4px solid transparent;
+          border-top-color: $primary-color;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
