@@ -18,7 +18,7 @@ h1 {
   font-family: $font-stack-sec;
   font-size: $fsize;
   color: $secondary-color;
-  border-bottom: 3px solid $blue;
+  border-bottom: 2px solid $blue;
   padding: 12px 0;
   width: 1.875em;
   text-transform: uppercase;
@@ -29,9 +29,15 @@ h2 {
   font-family: $font-stack-sec;
   font-size: $fsize;
   color: $secondary-color;
-  padding: 12px 0 0 0;
+  padding: 12px 0 24px 0;
   text-transform: uppercase;
   margin: 0;
+}
+
+h3 {
+  font: 24px $font-stack-sec;
+  color: $primary-color;
+  padding: 12px 0 0 0;
 }
 
 img, embed, object, video {
@@ -207,8 +213,10 @@ nav {
   text-transform: uppercase;
   font-size: 30px;
   position: relative;
-  top: 120px;
+  top: 50px;
   text-align: center;
+  padding-top: 40px;
+  letter-spacing: .1em;
 }
 
 
@@ -307,9 +315,9 @@ nav {
     display: inline-block;
     
     &:hover {
-    background-color: #94d1d7;
-  }
-   } 
+      background-color: $blue-hover;
+    }
+  } 
 }
 
 /* Projects */
@@ -319,85 +327,177 @@ nav {
 }
 
 .project_description {
-
+  p {
+    margin-bottom: 40px;
+  }
 }
 
 .project_images {
-  margin-top: 7em;
+  margin-top: 1em;
   text-align: center;
 
   img {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    border: 1px solid #e7e7e7;
+  }
+}
+
+.prev3 {
+  position: relative;
+  float: left;
+  margin-right: 5px;
+
+  a {
+    background: url(arrows_prev_white.png) $blue no-repeat 0 0;
+    color: #fff;
+    width: 115px;
+    margin: 10px 0 20px;
+    @include border-radius(3px);
+    display: inline-block;
+    background-position: 14px center;
+    font-family: $font-stack-sec;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    padding: 12px;    
+    text-decoration: none;
+    text-align: right;
+
+    &:hover {
+    background-color: $blue-hover;
+    }    
+  }
+}
+
+.next3 {
+  position: relative;
+  float: left;
+
+  a {
+    background: url(arrows_next_white.png) $blue no-repeat 0 0;
+    color: #fff;
+    width: 115px;
+    margin: 10px 0 20px;
+    @include border-radius(3px);
+    display: inline-block;
+    background-position: 100px center;
+    font-family: $font-stack-sec;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    padding: 12px;    
+    text-decoration: none;
+    text-align: left;
+
+    &:hover {
+    background-color: $blue-hover;
+    }
   }
 }
 
 .prev {
   position: fixed;
-  top: 40%;
   left: 0;
+  top: 40%;
   z-index: 1;
 
   a {
-    background: url(arrows_prev_grey.png) no-repeat 0 0 transparent;
-    background-position: 4px center;
-    width: 8px;
-    height: 12px;
-    display: block;
+    background: url(arrows_prev_grey.png) no-repeat 5px center;
+    width: 115px;
+    margin: 0;
     font-family: $font-stack-sec;
     font-size: 0.8em;
-    line-height: 0.8em;
-    text-transform: uppercase;
-    padding: 20px;    
+    line-height: 1.5em;
+    padding: 12px;    
     text-decoration: none;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
 
     &:hover {
-    background: url(arrows_prev_white.png) $blue no-repeat 0 -16px;
-    background-position: 4px center;
-    color: #fff;
-    width: 70px;
+    background: url(arrows_prev_white.png) $blue no-repeat 5px center;
     @include border-radius(3px);
-    }
+    }    
 
     &:hover:after {
-    content: "prev";
-    position: relative;
-    top: -5px;
+      content: "PREV";
+      padding-left: 10px;
     }
   }
 }
 
 .next {
   position: fixed;
-  top: 40%;
   right: 0;
+  top: 40%;
   z-index: 1;
 
   a {
-    background: url(arrows_next_grey.png) no-repeat 0 0 transparent;
-    background-position: 28px center;
-    width: 8px;
-    height: 12px;
-    display: block;
+    background: url(arrows_next_grey.png) no-repeat 10px center;
+    width: 115px;
+    margin: 0;
     font-family: $font-stack-sec;
     font-size: 0.8em;
-    line-height: 0.8em;
+    line-height: 1.5em;
+    padding: 12px;    
+    text-decoration: none;
+    text-align: right;
     text-transform: uppercase;
-    padding: 20px;    
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+    background: url(arrows_next_white.png) $blue no-repeat 55px center;
+    @include border-radius(3px);
+    }    
+
+    &:hover:before {
+      content: "NEXT";
+      padding-right: 10px;
+    }
+  }
+}
+
+.prev2 {
+  float: left;
+  position: relative;
+  top:160px;
+
+  a {
+    background: url(arrows_prev2_blue.png) no-repeat 0 center;
+    font-family: $font-stack-sec;
+    color: $blue;
+    font-size: 0.8em;
+    padding-left: 15px;    
+    text-decoration: none;
+    text-align: right;
     text-decoration: none;
 
     &:hover {
-    background: url(arrows_next_white.png) $blue no-repeat 0 -16px;
-    background-position: 58px center;
-    color: #fff;
-    width: 70px;
-    @include border-radius(3px);
-    }
+    background: url(arrows_prev2_blue.png) no-repeat 0 center;
+    }    
+  }
+}
 
-    &:hover:before {
-    content: "next";
-    position: relative;
-    top: -5px;
-    left: -5px;
+.next2 {
+  float: right;
+  position: relative;
+  top:160px;
+  margin-right: 35px;
+
+  a {
+    background: url(arrows_next2_blue.png) no-repeat 45px center;
+    font-family: $font-stack-sec;
+    color: $blue;
+    font-size: 0.8em;
+    padding: 12px;    
+    text-decoration: none;
+    text-align: right;
+    text-decoration: none;
+
+    &:hover {
+    background: url(arrows_next2_blue.png) no-repeat 55px center;
     }
   }
 }
@@ -485,6 +585,42 @@ section {
 
 .home .span_3_of_3 {
   text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #666;
+  height: 10em;
+  width: 100%;
+  display: block;
+  font-size: .7em;
+  letter-spacing: .05em;
+  padding: 20px;
+
+  .social-icons {
+    float: right;
+    margin-right: 40px;
+
+    a {
+      width: 28px;
+      height: 28px;
+      display: block-inline;
+      float: left;
+      margin: 0 10px;
+    }
+
+    .twitter {
+      background: url(icon-twitter.png) no-repeat 0 0;
+    }
+
+    .linkedin {
+      background: url(icon-linkedin.png) no-repeat 0 0;
+    }
+
+    .dribbble {
+      background: url(icon-dribbble.png) no-repeat 0 0;
+    }
+  }
 }
 
 

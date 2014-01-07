@@ -2,7 +2,7 @@
   font-family: $font-stack-sec;
   background: url(main-banner.png) no-repeat #ededed 0 0;
   height: 39em;
-  background-position: center 3.5em;
+  background-position: center 2.5em;
   text-transform: uppercase; 
 
   .intro {

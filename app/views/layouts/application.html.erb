@@ -5,18 +5,19 @@
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Karla|ITC+Charter">
 </head>
 <body>
 <header>
   <div class="content">
-    <a href="http://www.emjoydesign.com"><div class="logo"></div></a>
+    <a href="#home"><div class="logo"></div></a>
     <nav class="nav">
       <a id="menu-toggle" class="anchor-link" href="#"></a>
       <ul id="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#connect">Connect</a></li>
+        <li><a href="http://www.emjoydesign.com#home">Home</a></li>
+        <li><a href="http://www.emjoydesign.com#projects">Projects</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#connect">Connect</a></li>
       </ul>
     </nav>
   </div>
@@ -24,7 +25,12 @@
 <%= yield %>
 
 <footer>
-  Hi, I'm a footer
+  ©2014 Emjoy Design | Emily Thomas Portfolio Website
+  <div class="social-icons">
+    <a class="twitter" href="#"></a>
+    <a class="linkedin" href="#"></a>
+    <a class="dribbble" href="#"></a>
+  </div>
 </footer>
 <script type="text/javascript">
   $('.nav a').smoothScroll({offset: -140});
