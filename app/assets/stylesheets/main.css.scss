@@ -106,10 +106,6 @@ nav {
       font-family: $font-stack-sec;
       letter-spacing: .05em;
     }
-
-    a:hover, .active {
-      @include active;
-    }
 }
 
 .anchor-link { 
@@ -266,35 +262,20 @@ nav {
 }
 
 .f1_container {
-  @include flip-size;
   position: relative;
   margin: 0 auto;
 }
 
-.f1_container {
-  @include perspective(1000);
-}
 
 .f1_card {
-  @include flip-size;
-  @include transform;
   border: 1px solid #e4e4e4;
-}
-
-.f1_container:hover .f1_card {
-  @include transform-rotate;
 }
 
 .face {
   position: absolute;
-  @include flip-size;
-  @include backface-visibility(hidden);
 }
 
 .face.back {
-  @include flip-size;
-  @include transform-rotate;
-  @include box-sizing;
   color: $secondary-color;
   font-family: $font-stack;
   display: block;

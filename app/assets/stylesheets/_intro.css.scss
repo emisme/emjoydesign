@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'mixins';
+
 .home {
   font-family: $font-stack-sec;
   background: url(main-banner.png) no-repeat #ededed 0 0;
