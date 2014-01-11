@@ -14,8 +14,8 @@
     <nav class="nav">
       <a id="menu-toggle" class="anchor-link" href="#"></a>
       <ul id="menu">
-        <li><a href="http://www.emjoydesign.com#home">Home</a></li>
-        <li><a href="http://www.emjoydesign.com#projects">Projects</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/#connect">Connect</a></li>
       </ul>
@@ -25,7 +25,7 @@
 <%= yield %>
 
 <footer>
-  ©2014 Emjoy Design | Emily Thomas Portfolio Website
+  ©<%= Time.now.year %> Emjoy Design | Emily Thomas Portfolio Website
   <div class="social-icons">
     <a class="twitter" href="https://twitter.com/emjoydesign" target="_blank"></a>
     <a class="linkedin" href="#"></a>
