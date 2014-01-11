@@ -3,7 +3,7 @@
 
 .home {
   font-family: $font-stack-sec;
-  background: url(main-banner.png) no-repeat #ededed 0 0;
+  background: image-url("main-banner.png") no-repeat #ededed 0 0;
   height: 39em;
   background-position: center 2.5em;
   text-transform: uppercase; 
@@ -98,7 +98,7 @@
 
   .home {
     font-family: $font-stack-sec;
-    background: url(main-banner.png) no-repeat #ededed 0 0;
+    background: image-url("main-banner.png") no-repeat #ededed 0 0;
     height: 36em;
     background-position: center 3.5em;
     text-transform: uppercase; 
@@ -162,7 +162,7 @@
 
   .home {
     font-family: $font-stack-sec;
-    background: url(main-banner.png) no-repeat #ededed 0 0;
+    background: image-url("main-banner.png") no-repeat #ededed 0 0;
     height: 33em;
     background-position: center 3.5em;
     text-transform: uppercase; 
@@ -235,7 +235,7 @@
 
   .home {
     font-family: $font-stack-sec;
-    background: url(main-banner.png) no-repeat #ededed 0 0;
+    background: image-url("main-banner.png") no-repeat #ededed 0 0;
     height: 30em;
     background-position: center 3.5em;
     text-transform: uppercase; 

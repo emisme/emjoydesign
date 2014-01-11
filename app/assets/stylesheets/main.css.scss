@@ -57,7 +57,7 @@ header {
 }
 
 .logo {
-  background: url(logo.png) transparent 0 0;
+  background: image-url("logo.png") transparent 0 0;
   width: 145px;
   height: 126px;
   float: left;
@@ -92,7 +92,7 @@ nav {
 }
 
 .anchor-link { 
-  background: url(icon-nav.png) no-repeat 0 0;
+  background: image-url("icon-nav.png") no-repeat 0 0;
   width: 25px;
   height: 20px;
   display: none; 
@@ -170,7 +170,7 @@ nav {
 
   .content-img {
   height: 29em;
-  background: url(map.png) no-repeat #d7f5ff 0 0;
+  background: image-url("map.png") no-repeat #d7f5ff 0 0;
   background-position: center;
   }
 }
@@ -346,7 +346,7 @@ nav {
   margin-right: 5px;
 
   a {
-    background: url(arrows_prev_white.png) $blue no-repeat 0 0;
+    background: image-url("arrows_prev_white.png") $blue no-repeat 0 0;
     color: #fff;
     width: 115px;
     margin: 10px 0 20px;
@@ -372,7 +372,7 @@ nav {
   float: left;
 
   a {
-    background: url(arrows_next_white.png) $blue no-repeat 0 0;
+    background: image-url("arrows_next_white.png") $blue no-repeat 0 0;
     color: #fff;
     width: 115px;
     margin: 10px 0 20px;
@@ -400,7 +400,7 @@ nav {
   z-index: 1;
 
   a {
-    background: url(arrows_prev_grey.png) no-repeat 5px center;
+    background: image-url("arrows_prev_grey.png") no-repeat 5px center;
     width: 115px;
     margin: 0;
     font-family: $font-stack-sec;
@@ -414,7 +414,7 @@ nav {
     color: #fff;
 
     &:hover {
-    background: url(arrows_prev_white.png) $blue no-repeat 5px center;
+    background: image-url("arrows_prev_white.png") $blue no-repeat 5px center;
     @include border-radius(3px);
     }    
 
@@ -432,7 +432,7 @@ nav {
   z-index: 1;
 
   a {
-    background: url(arrows_next_grey.png) no-repeat 10px center;
+    background: image-url("arrows_next_grey.png") no-repeat 10px center;
     width: 115px;
     margin: 0;
     font-family: $font-stack-sec;
@@ -446,7 +446,7 @@ nav {
     color: #fff;
 
     &:hover {
-    background: url(arrows_next_white.png) $blue no-repeat 55px center;
+    background: image-url("arrows_next_white.png") $blue no-repeat 55px center;
     @include border-radius(3px);
     }    
 
@@ -463,7 +463,7 @@ nav {
   top:160px;
 
   a {
-    background: url(arrows_prev2_blue.png) no-repeat 0 center;
+    background: image-url("arrows_prev2_blue.png") no-repeat 0 center;
     font-family: $font-stack-sec;
     color: $blue;
     font-size: 0.8em;
@@ -473,7 +473,7 @@ nav {
     text-decoration: none;
 
     &:hover {
-    background: url(arrows_prev2_blue.png) no-repeat 0 center;
+    background: image-url("arrows_prev2_blue.png") no-repeat 0 center;
     }    
   }
 }
@@ -485,7 +485,7 @@ nav {
   margin-right: 35px;
 
   a {
-    background: url(arrows_next2_blue.png) no-repeat 45px center;
+    background: image-url("arrows_next2_blue.png") no-repeat 45px center;
     font-family: $font-stack-sec;
     color: $blue;
     font-size: 0.8em;
@@ -495,7 +495,7 @@ nav {
     text-decoration: none;
 
     &:hover {
-    background: url(arrows_next2_blue.png) no-repeat 55px center;
+    background: image-url("arrows_next2_blue.png") no-repeat 55px center;
     }
   }
 }
@@ -608,15 +608,15 @@ footer {
     }
 
     .twitter {
-      background: url(icon-twitter.png) no-repeat 0 0;
+      background: image-url("icon-twitter.png") no-repeat 0 0;
     }
 
     .linkedin {
-      background: url(icon-linkedin.png) no-repeat 0 0;
+      background: image-url("icon-linkedin.png") no-repeat 0 0;
     }
 
     .dribbble {
-      background: url(icon-dribbble.png) no-repeat 0 0;
+      background: image-url("icon-dribbble.png") no-repeat 0 0;
     }
   }
 }
