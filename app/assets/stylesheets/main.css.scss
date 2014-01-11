@@ -44,6 +44,23 @@ img, embed, object, video {
     max-width: 100%;
   }
 
+a.btn {
+     @include border-radius(3px);
+    font-family: $font-stack-sec;
+    background-color: $blue;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 10px 0 20px;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    
+    &:hover {
+      background-color: $blue-hover;
+    }
+  } 
+
 header {
   background-color: #f6f6f6;
   height: 6.2em;
@@ -64,6 +81,8 @@ header {
   height: 126px;
   float: left;
 }
+
+
 
 nav {
     float: right;
@@ -282,23 +301,6 @@ nav {
   p {
     margin-bottom: 5px;
   }
-
-  a {
-     @include border-radius(3px);
-    font-family: $font-stack-sec;
-    background-color: $blue;
-    color: #fff;
-    padding: 15px;
-    font-size: 15px;
-    text-decoration: none;
-    margin: 10px 0 20px;
-    letter-spacing: 0.05em;
-    display: inline-block;
-    
-    &:hover {
-      background-color: $blue-hover;
-    }
-  } 
 }
 
 /* Projects */
@@ -321,7 +323,13 @@ nav {
     margin-bottom: 35px;
     border: 1px solid #e7e7e7;
   }
+
+  img.no-border {
+    border: 0;
 }
+}
+
+
 
 .prev3 {
   position: relative;
