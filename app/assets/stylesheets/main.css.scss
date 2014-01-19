@@ -42,6 +42,10 @@ img, embed, object, video {
     max-width: 100%;
   }
 
+p {
+  padding: .6em 0;
+}
+
 header {
   background-color: #f6f6f6;
   height: 6.2em;
@@ -180,10 +184,6 @@ nav {
 
   .content {
     padding-left: 2.5em;
-  }
-  
-  p {
-    max-width: 44em /* 720px */;
   }
 }
 
@@ -340,59 +340,6 @@ nav {
   }
 }
 
-.prev3 {
-  position: relative;
-  float: left;
-  margin-right: 5px;
-
-  a {
-    background: image-url("arrows_prev_white.png") $blue no-repeat 0 0;
-    color: #fff;
-    width: 115px;
-    margin: 10px 0 20px;
-    @include border-radius(3px);
-    display: inline-block;
-    background-position: 14px center;
-    font-family: $font-stack-sec;
-    font-size: 0.8em;
-    line-height: 1.5em;
-    text-transform: uppercase;
-    padding: 12px;    
-    text-decoration: none;
-    text-align: right;
-
-    &:hover {
-    background-color: $blue-hover;
-    }    
-  }
-}
-
-.next3 {
-  position: relative;
-  float: left;
-
-  a {
-    background: image-url("arrows_next_white.png") $blue no-repeat 0 0;
-    color: #fff;
-    width: 115px;
-    margin: 10px 0 20px;
-    @include border-radius(3px);
-    display: inline-block;
-    background-position: 100px center;
-    font-family: $font-stack-sec;
-    font-size: 0.8em;
-    line-height: 1.5em;
-    text-transform: uppercase;
-    padding: 12px;    
-    text-decoration: none;
-    text-align: left;
-
-    &:hover {
-    background-color: $blue-hover;
-    }
-  }
-}
-
 .prev {
   position: fixed;
   left: 0;
@@ -457,49 +404,6 @@ nav {
   }
 }
 
-.prev2 {
-  float: left;
-  position: relative;
-  top:160px;
-
-  a {
-    background: image-url("arrows_prev2_blue.png") no-repeat 0 center;
-    font-family: $font-stack-sec;
-    color: $blue;
-    font-size: 0.8em;
-    padding-left: 15px;    
-    text-decoration: none;
-    text-align: right;
-    text-decoration: none;
-
-    &:hover {
-    background: image-url("arrows_prev2_blue.png") no-repeat 0 center;
-    }    
-  }
-}
-
-.next2 {
-  float: right;
-  position: relative;
-  top:160px;
-  margin-right: 35px;
-
-  a {
-    background: image-url("arrows_next2_blue.png") no-repeat 45px center;
-    font-family: $font-stack-sec;
-    color: $blue;
-    font-size: 0.8em;
-    padding: 12px;    
-    text-decoration: none;
-    text-align: right;
-    text-decoration: none;
-
-    &:hover {
-    background: image-url("arrows_next2_blue.png") no-repeat 55px center;
-    }
-  }
-}
-
 section {
   text-align: center;
   clear: both;
@@ -514,16 +418,17 @@ section {
     clear: both;
     position: relative;
   }
-}
 
-.content2 {
-    clear: both;
-    width: 1170px;
-    max-width: 1170px;
+  .content2 {
+    max-width: 63em;
     margin: 0 auto;
     padding: 0 1em;
+    clear: both;
     position: relative;
   }
+}
+
+
 
 /*  SECTIONS  */
 
