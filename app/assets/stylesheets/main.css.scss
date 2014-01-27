@@ -505,8 +505,9 @@ section {
   }
 }
 
-@media only screen and (max-width: 48em) {
-
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
   .span_3_of_3 {
     width: 100%; 
   }
