@@ -60,11 +60,26 @@ header {
   }
 }
 
+@media (max-width: 40em){
+  header {
+    height: 3.2em;
+  }
+}
+
 .logo {
   background: image-url("logo.png") transparent 0 0;
   width: 145px;
   height: 126px;
   float: left;
+}
+
+@media (max-width: 40em){
+  .logo {
+    background: image-url("logo.png") no-repeat transparent 0 0;
+    background-size: 100%;
+    width: 76px;
+    float: left;
+  }
 }
 
 nav {
@@ -108,6 +123,8 @@ nav {
   float: right; 
 }
 
+
+
 #mobile-nav { display: none; }
 
 @media (max-width: 40em){
@@ -121,13 +138,14 @@ nav {
   }
 
   nav {
+    padding-top: .9em;
     
     a {
       margin: 0;
     }
 
     a:hover, .active { 
-      border-bottom: 3px solid #999;
+      border-bottom: 0;
     }
   }
 
@@ -176,6 +194,10 @@ nav {
   height: 29em;
   background: image-url("map.png") no-repeat #d7f5ff 0 0;
   background-position: center;
+  }
+
+  p {
+    padding: 0;
   }
 }
 
@@ -238,9 +260,14 @@ nav {
   }
 
   img {
-    max-width: 21.875 /* 350px */;
+    max-width: 100% /* 350px */;
     max-height: 233px;
-    
+  }
+
+  .boxes {
+    float: left;
+    display: inline;
+    margin: 5px;
   }
 }
 
@@ -287,7 +314,6 @@ nav {
   .title {
     font-family: $font-stack-sec;
     font-size: 22px;
-    margin-bottom: 10px;
   }
 
   .role {
@@ -295,12 +321,9 @@ nav {
     font-family: $font-stack-sec;
     text-transform: uppercase;
   }
+}
 
-  p {
-    margin-bottom: 5px;
-  }
-
-  a {
+a.btn {
      @include border-radius(3px);
     font-family: $font-stack-sec;
     background-color: $blue;
@@ -316,12 +339,17 @@ nav {
       background-color: $blue-hover;
     }
   } 
-}
 
 /* Projects */
 
 .project_individual {
   padding-top: 10em;
+}
+
+@media (max-width: 40em){
+  .project_individual {
+  padding-top: 0;
+  }
 }
 
 .project_description {
@@ -337,6 +365,10 @@ nav {
   img {
     margin-bottom: 35px;
     border: 1px solid #e7e7e7;
+  }
+
+  .no-border {
+    border: 0;
   }
 }
 
@@ -407,7 +439,7 @@ nav {
 section {
   text-align: center;
   clear: both;
-  padding: 0px;
+  padding: 0;
   margin: 0 0 100px 0;
 
   .content {
@@ -494,7 +526,8 @@ footer {
   background-color: #333;
   color: #666;
   height: 10em;
-  width: 100%;
+  line-height: 1.5em;
+  max-width: 100%;
   display: block;
   font-size: .7em;
   letter-spacing: .05em;
@@ -522,6 +555,11 @@ footer {
 
     .dribbble {
       background: image-url("icon-dribbble.png") no-repeat 0 0;
+    }
+  }
+  @media (max-width: 40em){
+    .social-icons {
+      float: none;
     }
   }
 }

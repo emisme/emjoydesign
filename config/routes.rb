@@ -18,6 +18,7 @@ Emjoydesign::Application.routes.draw do
       get :salesreporting
       get :campaigns
       get :search
+      get :test2
     end
   end
 

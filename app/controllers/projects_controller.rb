@@ -33,4 +33,7 @@ class ProjectsController < ApplicationController
   def campaign
   end
 
+  def test2
+  end
+
 end
