@@ -4,6 +4,169 @@
 .home {
   font-family: $font-stack-sec;
   background: image-url("main-banner.png") no-repeat #ededed 0 0;
+  height: 35em;
+  background-position: center 0;
+  text-transform: uppercase; 
+
+  .intro {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+
+    .emily-thomas {
+      color: $primary-color;
+      font-size: 4.5em;
+      padding: 3.5em 0 0.4em 0;
+      line-height: 1.1em;
+    }
+
+    .portfolio-website {
+      background-color: #333333;
+      font-size: 1.4em;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: #f6f6f6;
+      line-height: 2em;
+      margin: 0 auto;
+      width: 15em;
+      padding: 0 0;
+
+      .triangle-right {
+        width: 0;
+        height: 0;
+        border-top: 22px solid transparent;
+        border-right: 12px solid #ededed;
+        border-bottom: 22px solid transparent;
+        display: inline-block;
+        float: right;
+      }
+
+      .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 22px solid transparent;
+        border-left: 12px solid #ededed;
+        border-bottom: 22px solid transparent;
+        float: left;
+      }
+    } 
+  }
+}
+
+@media only screen and (max-width: 910px){
+  .home {
+    font-family: $font-stack-sec;
+    background: image-url("main-banner.png") no-repeat #ededed 0 0;
+    height: 35em;
+    background-position: center 0;
+    text-transform: uppercase; 
+
+    .intro {
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+
+      .emily-thomas {
+        color: $primary-color;
+        font-size: 3.0em;
+        padding: 6em 0 0.4em 0;
+        line-height: 1.1em;
+      }
+
+      .portfolio-website {
+        background-color: #333333;
+        font-size: 1em;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        color: #f6f6f6;
+        line-height: 2em;
+        margin: 0 auto;
+        width: 15em;
+        padding: 0 0;
+
+        .triangle-right {
+          width: 0;
+          height: 0;
+          border-top: 16px solid transparent;
+          border-right: 6px solid #ededed;
+          border-bottom: 16px solid transparent;
+          display: inline-block;
+          float: right;
+        }
+
+        .triangle-left {
+          width: 0;
+          height: 0;
+          border-top: 16px solid transparent;
+          border-left: 6px solid #ededed;
+          border-bottom: 16px solid transparent;
+          float: left;
+        }
+      } 
+    }
+  }
+}
+
+@media only screen and (max-width: 454px){
+  .home {
+    font-family: $font-stack-sec;
+    background: image-url("main-banner.png") no-repeat #ededed 0 0;
+    height: 20em;
+    background-position: center 0;
+    text-transform: uppercase; 
+    background-size: 130%;
+
+    .intro {
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+
+      .emily-thomas {
+        color: $primary-color;
+        font-size: 2.0em;
+        padding: 4.9em 0 0.4em 0;
+        line-height: 1.1em;
+      }
+
+      .portfolio-website {
+        background-color: #333333;
+        font-size: 0.8em;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        color: #f6f6f6;
+        line-height: 2.3em;
+        margin: 0 auto;
+        width: 15em;
+        padding: 0;
+
+        .triangle-right {
+          width: 0;
+          height: 0;
+          border-top: 16px solid transparent;
+          border-right: 6px solid #ededed;
+          border-bottom: 16px solid transparent;
+          display: inline-block;
+          float: right;
+        }
+
+        .triangle-left {
+          width: 0;
+          height: 0;
+          border-top: 16px solid transparent;
+          border-left: 6px solid #ededed;
+          border-bottom: 16px solid transparent;
+          float: left;
+        }
+      } 
+    }
+  }
+}
+
+/*
+
+.home {
+  font-family: $font-stack-sec;
+  background: image-url("main-banner.png") no-repeat #ededed 0 0;
   height: 39em;
   background-position: center 2.5em;
   text-transform: uppercase; 
@@ -16,7 +179,7 @@
     .emily-thomas {
       color: $primary-color;
       font-size: 2.125em;
-      padding: 6.5em 0 0.7em 0;
+      padding: 6.4em 0 0.7em 0;
       line-height: 1.1em;
     }
 
@@ -100,8 +263,9 @@
     font-family: $font-stack-sec;
     background: image-url("main-banner.png") no-repeat #ededed 0 0;
     height: 36em;
-    background-position: center 3.5em;
+    background-position: center 2.0em;
     text-transform: uppercase; 
+    background-size: 650px 650px;
 
     .intro {
       width: 70%;
@@ -111,7 +275,7 @@
       .emily-thomas {
         color: $primary-color;
         font-size: 1.75em;
-        padding: 7.5em 0 0.7em 0;
+        padding: 8em 0 0.7em 0;
         line-height: 1.1em;
       }
 
@@ -163,9 +327,10 @@
   .home {
     font-family: $font-stack-sec;
     background: image-url("main-banner.png") no-repeat #ededed 0 0;
-    height: 33em;
-    background-position: center 3.5em;
+    height: 30em;
+    background-position: center 2em;
     text-transform: uppercase; 
+    background-size: 500px 500px;
 
     .intro {
       width: 80%;
@@ -175,7 +340,7 @@
       .emily-thomas {
         color: $primary-color;
         font-size: 1.5em;
-        padding: 8.5em 0 0.7em 0;
+        padding: 6.5em 0 0.7em 0;
         line-height: 1.1em;
       }
 
@@ -216,7 +381,7 @@
         padding: 5px 13px;
         display: inline-block;
         letter-spacing: 0.005em;
-        margin-top: 2em;
+        margin-top: 1em;
       }
 
       .circle { 
@@ -231,13 +396,15 @@
   }
 }
 
+
 @media (max-width: 520px){
 
   .home {
     font-family: $font-stack-sec;
     background: image-url("main-banner.png") no-repeat #ededed 0 0;
-    height: 30em;
-    background-position: center 3.5em;
+    height: 22em;
+    background-position: center 1em;
+    background-size: 400px 400px;
     text-transform: uppercase; 
 
     .intro {
@@ -248,13 +415,13 @@
       .emily-thomas {
         color: $primary-color;
         font-size: 1.5em;
-        padding: 10em 0 0.25em 0;
+        padding: 5em 0 0.25em 0;
         line-height: 1.1em;
       }
 
       .portfolio-website {
         background-color: $primary-color;
-        font-size: 1.4em;
+        font-size: 1.5em;
         font-weight: 400;
         letter-spacing: 0.04em;
         color: #f6f6f6;
@@ -282,14 +449,14 @@
       } 
 
       .simply {
-        font-size: 13px;
+        font-size: 11px;
         color: $primary-color;
         border: 3px solid $primary-color;
         font-weight: bold;
-        padding: 3px 9px;
+        padding: 2px 9px;
         display: inline-block;
         letter-spacing: 0.005em;
-        margin-top: 1.5em;
+        margin-top: 1em;
       }
 
       .circle { 
@@ -326,3 +493,5 @@
     }
   }
 }
+
+*/

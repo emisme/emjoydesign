@@ -3,22 +3,17 @@
     <div class="col span_3_of_3">
       <div class="intro">
         <div class="emily-thomas">Emily Thomas</div>
-        <div class="diamond"></div>
-        <div class="diamond"></div>
-        <div class="diamond"></div>
         <div class="portfolio-website">
           <div class="triangle-left"></div>
           <div class="triangle-right"></div>
             Portfolio Website
         </div>
-        <div class="simply">Simply Designed . Simply Beautiful</div>
       </div>
     </div>
   </div>
 </section>
 <section class="projects" id="projects">
   <div class="content">
-    <h1>Projects</h1>
     <ul class="grid">
       <li>
         <div class="f1_container">
@@ -30,11 +25,11 @@
               <div class="title">
                 Beacon Sales Reporting
               </div>
-              <p>Customizable financial dashboard for asset managers.</p>
+              <p>Customizable financial dashboard.</p>
               <a href="/projects/salesreporting" class="btn">View Project</a>
               <div class="role">
                 UI UX
-              </div>
+              </div>  
             </div>
           </div>
         </div>
@@ -68,7 +63,7 @@
               <div class="title">
                  Beacon Redesign
               </div>
-              <p>Large scale financial analytics application.</p>
+              <p>Financial analytics application.</p>
               <a href="/projects/search" class="btn">View Project</a>
               <div class="role">
                 UI UX
@@ -87,7 +82,7 @@
               <div class="title">
                 Gatorade
               </div>
-              <p>Internal web application that monitors real-time social media.</p>
+              <p>Real-time social media app.</p>
               <a href="/projects/gatorade" class="btn">View Project</a>
               <div class="role">
                 UI UX
@@ -106,7 +101,7 @@
               <div class="title">
                 Kompilr
               </div>
-              <p>Visualize your career by converting your resume into infographics.</p>
+              <p>Visualize your resume.</p>
               <a href="/projects/kompilr" class="btn">View Project</a>
               <div class="role">
                 UI UX HTML CSS
@@ -163,7 +158,7 @@
               <div class="title">
                 Cisco Systems
               </div>
-              <p>Internal online application to generate quarterly reports.</p>
+              <p>Quarterly reports generation.</p>
               <a href="/projects/cisco" class="btn">View Project</a>
               <div class="role">
                 UI UX
@@ -228,3 +223,20 @@
     </div>
   </div>
 </section>
+<script type='text/javascript'>
+  $(document).ready(function(){
+
+    var section = getParameterByName('section');
+    $('html, body').animate({
+        scrollTop: ($('#' + section).offset().top)
+    },900);
+
+    function getParameterByName(name) {
+        name        = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regex   = new RegExp("[\\?&]" + name + "=([^&#]*)");
+        var results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+  });
+
+</script>

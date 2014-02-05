@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Karla|ITC+Charter">
 </head>
 <body>
@@ -14,10 +15,10 @@
     <nav class="nav">
       <a id="menu-toggle" class="anchor-link" href="#"></a>
       <ul id="menu">
-        <li><a href="http://www.emjoydesign.com/#home">Home</a></li>
-        <li><a href="http://www.emjoydesign.com/#projects">Projects</a></li>
-        <li><a href="http://www.emjoydesign.com/#about">About</a></li>
-        <li><a href="http://www.emjoydesign.com/#connect">Connect</a></li>
+        <li><%= link_to 'Home', ('home' == params[:controller]) ? root_path(:anchor => 'home') : root_path(:section => 'home') %></li>
+        <li><%= link_to 'Projects', ('home' == params[:controller]) ? root_path(:anchor => 'projects') : root_path(:section => 'projects') %></li>
+        <li><%= link_to 'About', ('home' == params[:controller]) ? root_path(:anchor => 'about') : root_path(:section => 'about') %></li>
+        <li><%= link_to 'Connect', ('home' == params[:controller]) ? root_path(:anchor => 'connect') : root_path(:section => 'connect') %></li>
       </ul>
     </nav>
   </div>
@@ -28,7 +29,7 @@
   ©<%= Time.now.year %> Emjoy Design | Emily Thomas Portfolio Website
   <div class="social-icons">
     <a class="twitter" href="https://twitter.com/emjoydesign" target="_blank"></a>
-    <a class="linkedin" href="#"></a>
+    <a class="linkedin" href="http://www.linkedin.com/pub/emily-thomas/29/721/38" target="_blank"></a>
     <a class="dribbble" href="http://dribbble.com/emilyjansen" target="_blank"></a>
   </div>
 </footer>
