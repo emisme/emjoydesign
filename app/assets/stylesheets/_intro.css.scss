@@ -57,9 +57,10 @@
   .home {
     font-family: $font-stack-sec;
     background: image-url("main-banner.png") no-repeat #ededed 0 0;
-    height: 35em;
+    height: 28em;
     background-position: center 0;
     text-transform: uppercase; 
+    background-size: 65%;
 
     .intro {
       width: 80%;
@@ -69,7 +70,7 @@
       .emily-thomas {
         color: $primary-color;
         font-size: 3.0em;
-        padding: 6em 0 0.4em 0;
+        padding: 4.5em 0 0.4em 0;
         line-height: 1.1em;
       }
 

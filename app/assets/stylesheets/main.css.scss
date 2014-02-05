@@ -27,8 +27,8 @@ h1 {
   h1 {
     font-family: $font-stack-sec;
     font-size: $fsize;
-    color: $secondary-color;
-    border-bottom: 2px solid $blue;
+    color: $primary-color;
+    border-bottom: 1px solid #333;
     padding: 0.75em 0;
     width: 1.875em;
     text-transform: uppercase;
@@ -43,6 +43,7 @@ h2 {
   padding: 0.5em 0 0.7em 0;
   text-transform: uppercase;
   margin: 0;
+  letter-spacing: 0.03em;
 }
 
 @media only screen and (max-width: 640px){
