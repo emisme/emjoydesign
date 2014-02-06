@@ -5,7 +5,7 @@
 body {
   font: normal 100% $font-stack;
   line-height: $line-height;
-  color: $primary-color;
+  color: #666;
   margin: 0 auto;
   padding: 0;
   max-width: 100%;
@@ -15,8 +15,8 @@ body {
 h1 {
   font-family: $font-stack-sec;
   font-size: $fsize;
-  color: $primary-color;
-  border-bottom: 1px solid #333;
+  color: #666;
+  border-bottom: 1px solid #ccc;
   padding: 0.75em 0;
   width: 1.875em;
   text-transform: uppercase;
@@ -27,8 +27,8 @@ h1 {
   h1 {
     font-family: $font-stack-sec;
     font-size: $fsize;
-    color: $primary-color;
-    border-bottom: 1px solid #333;
+    color: #666;
+    border-bottom: 1px solid #ccc;
     padding: 0.75em 0;
     width: 1.875em;
     text-transform: uppercase;
@@ -39,21 +39,21 @@ h1 {
 h2 {
   font-family: $font-stack-sec;
   font-size: $fsize;
-  color: $secondary-color;
   padding: 0.5em 0 0.7em 0;
   text-transform: uppercase;
   margin: 0;
   letter-spacing: 0.03em;
+  color: $secondary-color;
 }
 
 @media only screen and (max-width: 640px){
   h2 {
   font-family: $font-stack-sec;
   font-size: 1em;
-  color: $secondary-color;
   padding: 0.25em 0 0.5em 0;
   text-transform: uppercase;
   margin: 0;
+  color: $secondary-color;
   }
 }
 
@@ -71,13 +71,12 @@ p {
   font-size: 1.125em;
   line-height: 1.5em;
   padding: 0.6em 0;
-  color: #666;
 }
 
 @media only screen and (max-width: 320px){
   p {
     font-size: 15px;
-    line-height: 1.5em;
+    line-height: 1.6em;
     padding: 0.6em 0;
   }
 }
@@ -185,6 +184,10 @@ nav {
       border-bottom: 0;
     }
   }
+
+  ul.close { 
+    display: none;
+    } 
 
   ul.open { 
     background-color: #f6f6f6;
@@ -366,7 +369,6 @@ nav {
 .face.back {
   @include transform-rotate;
   @include box-sizing;
-  color: $secondary-color;
   font-family: $font-stack;
   display: block;
   padding: 0;
@@ -386,6 +388,7 @@ nav {
     font-size: $fsize;
     font-family: $font-stack-sec;
     text-transform: uppercase;
+    color: $secondary-color;
   }
 }
 
