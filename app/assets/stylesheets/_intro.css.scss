@@ -3,10 +3,9 @@
 
 .home {
   font-family: $font-stack-sec;
-  background: image-url("main-banner.png") no-repeat #ededed 0 0;
-  height: 35em;
-  background-position: center 0;
-  text-transform: uppercase; 
+  background: image-url("main-banner.png") no-repeat #efefe8 0 0;
+  height: 38em;
+  background-position: center -7px;
 
   .intro {
     width: 60%;
@@ -14,53 +13,39 @@
     margin: 0 auto;
 
     .emily-thomas {
-      color: $primary-color;
-      font-size: 4.5em;
-      padding: 3.5em 0 0.4em 0;
-      line-height: 1.1em;
+      color: $secondary-color;
+      font-size: 3.125em;
+      padding: 5.8em 0 0 0;
+      line-height: 1em;
+      font-weight: 200;
+      text-transform: uppercase; 
     }
-
-    .portfolio-website {
-      background-color: #333333;
-      font-size: 1.4em;
-      font-weight: 400;
-      letter-spacing: 0.1em;
-      color: #f6f6f6;
-      line-height: 2em;
-      margin: 0 auto;
-      width: 15em;
-      padding: 0 0;
-
-      .triangle-right {
-        width: 0;
-        height: 0;
-        border-top: 22px solid transparent;
-        border-right: 12px solid #ededed;
-        border-bottom: 22px solid transparent;
-        display: inline-block;
-        float: right;
-      }
-
-      .triangle-left {
-        width: 0;
-        height: 0;
-        border-top: 22px solid transparent;
-        border-left: 12px solid #ededed;
-        border-bottom: 22px solid transparent;
-        float: left;
-      }
-    } 
+    .tagline {
+      font-size: 14px;
+      line-height: 1.4em;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #999;
+      padding-top: 10px;
+    }
+    .designer {
+      font-family: $font-stack;
+      font-size: 1.5em;
+      line-height: 3.5em;
+      color: #d76262;
+      font-weight: 100;
+    }
   }
 }
 
-@media only screen and (max-width: 910px){
+
+@media only screen and (max-width: 768px){
   .home {
     font-family: $font-stack-sec;
-    background: image-url("main-banner.png") no-repeat #ededed 0 0;
+    background: image-url("main-banner.png") no-repeat #efefe8 0 0;
     height: 28em;
-    background-position: center 0;
-    text-transform: uppercase; 
-    background-size: 65%;
+    background-position: center -15px;
+    background-size: 100%;
 
     .intro {
       width: 80%;
@@ -68,54 +53,40 @@
       margin: 0 auto;
 
       .emily-thomas {
-        color: $primary-color;
-        font-size: 3.0em;
-        padding: 4.5em 0 0.4em 0;
-        line-height: 1.1em;
+        color: $secondary-color;
+        font-size: 2.7em;
+        padding: 4.7em 0 0 0;
+        line-height: 1em;
+        font-weight: 200;
+        text-transform: uppercase; 
       }
-
-      .portfolio-website {
-        background-color: #333333;
-        font-size: 1em;
-        font-weight: 400;
-        letter-spacing: 0.1em;
-        color: #f6f6f6;
-        line-height: 2em;
-        margin: 0 auto;
-        width: 15em;
-        padding: 0 0;
-
-        .triangle-right {
-          width: 0;
-          height: 0;
-          border-top: 16px solid transparent;
-          border-right: 6px solid #ededed;
-          border-bottom: 16px solid transparent;
-          display: inline-block;
-          float: right;
-        }
-
-        .triangle-left {
-          width: 0;
-          height: 0;
-          border-top: 16px solid transparent;
-          border-left: 6px solid #ededed;
-          border-bottom: 16px solid transparent;
-          float: left;
-        }
-      } 
+      .tagline {
+        font-size: 14px;
+        line-height: 1.4em;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #999;
+        padding-top: 10px;
+      }
+      .designer {
+        font-family: $font-stack;
+        font-size: 1.5em;
+        line-height: 3.5em;
+        color: #d76262;
+        font-weight: 100;
+      }
     }
   }
 }
 
-@media only screen and (max-width: 454px){
+@media only screen and (max-width: 460px){
   .home {
     font-family: $font-stack-sec;
-    background: image-url("main-banner.png") no-repeat #ededed 0 0;
+    background: image-url("main-banner.png") no-repeat #efefe8 0 0;
     height: 20em;
     background-position: center 0;
     text-transform: uppercase; 
-    background-size: 130%;
+    background-size: 90%;
 
     .intro {
       width: 80%;
@@ -123,376 +94,28 @@
       margin: 0 auto;
 
       .emily-thomas {
-        color: $primary-color;
-        font-size: 2.0em;
-        padding: 4.9em 0 0.4em 0;
-        line-height: 1.1em;
+        color: $secondary-color;
+        font-size: 2.2em;
+        padding: 3.1em 0 0 0;
+        line-height: 1em;
+        font-weight: 200;
+        text-transform: uppercase; 
       }
-
-      .portfolio-website {
-        background-color: #333333;
-        font-size: 0.8em;
-        font-weight: 400;
-        letter-spacing: 0.1em;
-        color: #f6f6f6;
-        line-height: 2.3em;
-        margin: 0 auto;
-        width: 15em;
-        padding: 0;
-
-        .triangle-right {
-          width: 0;
-          height: 0;
-          border-top: 16px solid transparent;
-          border-right: 6px solid #ededed;
-          border-bottom: 16px solid transparent;
-          display: inline-block;
-          float: right;
-        }
-
-        .triangle-left {
-          width: 0;
-          height: 0;
-          border-top: 16px solid transparent;
-          border-left: 6px solid #ededed;
-          border-bottom: 16px solid transparent;
-          float: left;
-        }
-      } 
-    }
-  }
-}
-
-/*
-
-.home {
-  font-family: $font-stack-sec;
-  background: image-url("main-banner.png") no-repeat #ededed 0 0;
-  height: 39em;
-  background-position: center 2.5em;
-  text-transform: uppercase; 
-
-  .intro {
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
-
-    .emily-thomas {
-      color: $primary-color;
-      font-size: 2.125em;
-      padding: 6.4em 0 0.7em 0;
-      line-height: 1.1em;
-    }
-
-    .portfolio-website {
-      background-color: $primary-color;
-      font-size: 2.5em;
-      font-weight: 400;
-      letter-spacing: 0.04em;
-      color: #f6f6f6;
-      line-height: 1.5em;
-      margin: 0.5em auto;
-
-      .triangle-right {
-        width: 0;
-        height: 0;
-        border-top: 33px solid transparent;
-        border-right: 15px solid #ededed;
-        border-bottom: 33px solid transparent;
-        display: inline-block;
-        float: right;
-      }
-
-      .triangle-left {
-        width: 0;
-        height: 0;
-        border-top: 33px solid transparent;
-        border-left: 15px solid #ededed;
-        border-bottom: 33px solid transparent;
-        float: left;
-      }
-    } 
-
-    .simply {
-      font-size: $fsize;
-      color: $primary-color;
-      border: 3px solid $primary-color;
-      font-weight: bold;
-      padding: 5px 13px;
-      display: inline-block;
-      letter-spacing: 0.005em;
-      margin-top: 2em;
-    }
-
-    .circle { 
-      @include border-radius(3px);
-      background-color: $primary-color;
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      margin: 0 3px;
-    }
-
-    .diamond {
-      width: 0;
-      height: 0;
-      border: 4px solid transparent;
-      border-bottom-color: $primary-color;
-      position: relative;
-      top: -4px;
-      display: inline-block;
-      margin: 0 4px;
-      
-      &:after{
-        content: '';
-        position: absolute;
-        left: -4px;
-        top: 4px;
-        width: 0;
-        height: 0;
-        border: 4px solid transparent;
-        border-top-color: $primary-color;
-        display: inline-block;
-      }
-    }
-  }
-}
-
-@media (max-width: 880px){
-
-  .home {
-    font-family: $font-stack-sec;
-    background: image-url("main-banner.png") no-repeat #ededed 0 0;
-    height: 36em;
-    background-position: center 2.0em;
-    text-transform: uppercase; 
-    background-size: 650px 650px;
-
-    .intro {
-      width: 70%;
-      text-align: center;
-      margin: 0 auto;
-
-      .emily-thomas {
-        color: $primary-color;
-        font-size: 1.75em;
-        padding: 8em 0 0.7em 0;
-        line-height: 1.1em;
-      }
-
-      .portfolio-website {
-        background-color: $primary-color;
-        font-size: 2em;
-        font-weight: 400;
-        letter-spacing: 0.04em;
-        color: #f6f6f6;
-        line-height: 1.5em;
-        margin: 0.5em auto;
-
-        .triangle-right {
-          width: 0;
-          height: 0;
-          border-top: 27px solid transparent;
-          border-right: 15px solid #ededed;
-          border-bottom: 27px solid transparent;
-          display: inline-block;
-          float: right;
-        }
-
-        .triangle-left {
-          width: 0;
-          height: 0;
-          border-top: 27px solid transparent;
-          border-left: 15px solid #ededed;
-          border-bottom: 27px solid transparent;
-          float: left;
-        }
-      } 
-
-      .simply {
+      .tagline {
         font-size: 14px;
-        color: $primary-color;
-        border: 3px solid $primary-color;
-        font-weight: bold;
-        padding: 5px 13px;
-        display: inline-block;
-        letter-spacing: 0.005em;
-        margin-top: 2em;
+        line-height: 1.4em;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #999;
+        padding-top: 10px;
+      }
+      .designer {
+        font-family: $font-stack;
+        font-size: 1.3em;
+        line-height: 3.7em;
+        color: #d76262;
+        font-weight: 100;
       }
     }
   }
 }
-
-@media (max-width: 600px){
-
-  .home {
-    font-family: $font-stack-sec;
-    background: image-url("main-banner.png") no-repeat #ededed 0 0;
-    height: 30em;
-    background-position: center 2em;
-    text-transform: uppercase; 
-    background-size: 500px 500px;
-
-    .intro {
-      width: 80%;
-      text-align: center;
-      margin: 0 auto;
-
-      .emily-thomas {
-        color: $primary-color;
-        font-size: 1.5em;
-        padding: 6.5em 0 0.7em 0;
-        line-height: 1.1em;
-      }
-
-      .portfolio-website {
-        background-color: $primary-color;
-        font-size: 2em;
-        font-weight: 400;
-        letter-spacing: 0.04em;
-        color: #f6f6f6;
-        line-height: 1.5em;
-        margin: 0.5em auto;
-
-        .triangle-right {
-          width: 0;
-          height: 0;
-          border-top: 26px solid transparent;
-          border-right: 15px solid #ededed;
-          border-bottom: 26px solid transparent;
-          display: inline-block;
-          float: right;
-        }
-
-        .triangle-left {
-          width: 0;
-          height: 0;
-          border-top: 26px solid transparent;
-          border-left: 15px solid #ededed;
-          border-bottom: 26px solid transparent;
-          float: left;
-        }
-      } 
-
-      .simply {
-        font-size: 14px;
-        color: $primary-color;
-        border: 3px solid $primary-color;
-        font-weight: bold;
-        padding: 5px 13px;
-        display: inline-block;
-        letter-spacing: 0.005em;
-        margin-top: 1em;
-      }
-
-      .circle { 
-        @include border-radius(3px);
-        background-color: $primary-color;
-        display: inline-block;
-        width: 6px;
-        height: 6px;
-        margin: 0 3px;
-      }
-    }
-  }
-}
-
-
-@media (max-width: 520px){
-
-  .home {
-    font-family: $font-stack-sec;
-    background: image-url("main-banner.png") no-repeat #ededed 0 0;
-    height: 22em;
-    background-position: center 1em;
-    background-size: 400px 400px;
-    text-transform: uppercase; 
-
-    .intro {
-      width: 100%;
-      text-align: center;
-      margin: 0 auto;
-
-      .emily-thomas {
-        color: $primary-color;
-        font-size: 1.5em;
-        padding: 5em 0 0.25em 0;
-        line-height: 1.1em;
-      }
-
-      .portfolio-website {
-        background-color: $primary-color;
-        font-size: 1.5em;
-        font-weight: 400;
-        letter-spacing: 0.04em;
-        color: #f6f6f6;
-        line-height: 1.5em;
-        margin: 0.5em auto;
-
-        .triangle-right {
-          width: 0;
-          height: 0;
-          border-top: 18px solid transparent;
-          border-right: 8px solid #ededed;
-          border-bottom: 18px solid transparent;
-          display: inline-block;
-          float: right;
-        }
-
-        .triangle-left {
-          width: 0;
-          height: 0;
-          border-top: 18px solid transparent;
-          border-left: 8px solid #ededed;
-          border-bottom: 18px solid transparent;
-          float: left;
-        }
-      } 
-
-      .simply {
-        font-size: 11px;
-        color: $primary-color;
-        border: 3px solid $primary-color;
-        font-weight: bold;
-        padding: 2px 9px;
-        display: inline-block;
-        letter-spacing: 0.005em;
-        margin-top: 1em;
-      }
-
-      .circle { 
-        @include border-radius(3px);
-        background-color: $primary-color;
-        display: inline-block;
-        width: 6px;
-        height: 6px;
-        margin: 0 3px;
-      }
-
-      .diamond {
-        width: 0;
-        height: 0;
-        border: 4px solid transparent;
-        border-bottom-color: $primary-color;
-        position: relative;
-        top: -4px;
-        display: inline-block;
-        margin: 0 4px;
-        
-        &:after{
-          content: '';
-          position: absolute;
-          left: -4px;
-          top: 4px;
-          width: 0;
-          height: 0;
-          border: 4px solid transparent;
-          border-top-color: $primary-color;
-          display: inline-block;
-        }
-      }
-    }
-  }
-}
-
-*/
