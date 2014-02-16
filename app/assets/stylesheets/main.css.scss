@@ -16,9 +16,8 @@ h1 {
   font-family: $font-stack-sec;
   font-size: 1em;
   color: $third-color;
-  padding: 0.75em 0;
   text-transform: uppercase;
-  margin: 0 0 1.5em 0;
+  margin: 2.25em 0 1em 0;
   text-align: left;
 }
 
@@ -27,10 +26,18 @@ h1 {
     font-family: $font-stack-sec;
     font-size: 1em;
     color: $third-color;
-    padding: 0.75em 0;
     text-transform: uppercase;
-    margin: 0 0 1.5em 0;
-    text-align: left;
+    margin: 2.25em 0;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  h1 {
+    font-family: $font-stack-sec;
+    font-size: 1em;
+    color: $third-color;
+    text-transform: uppercase;
+    margin: 2em 0 0.825em 0;
   }
 }
 
@@ -236,13 +243,56 @@ nav {
 
   .content-img {
     height: 29em;
-    background: image-url("map2.png") no-repeat #d5ebed 0 0;
+    background: image-url("map.png") no-repeat #d5ebed 0 0;
     background-position: center;
     position: relative;
   }
 
+  .san-francisco {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 4.825em;
+    font-family: $font-stack-sec;
+    color: $third-color;
+  }
+
   p {
     padding: 0;
+  }
+
+  .social-icons {
+    float: right;
+    position: relative;
+    top: -125px;
+
+    a {
+      width: 28px;
+      height: 28px;
+      display: block-inline;
+      float: left;
+      margin: 0 20px 0 0;
+    }
+
+    .twitter {
+      background: image-url("icon-twitter.png") no-repeat 0 0;
+    }
+
+    .linkedin {
+      background: image-url("icon-linkedin.png") no-repeat 0 0;
+    }
+
+    .dribbble {
+      background: image-url("icon-dribbble.png") no-repeat 0 0;
+    }
+  }
+  @media only screen and (max-width: 940px){
+    .social-icons {
+      float: none;
+      margin-top: 2em;
+      position: relative;
+      top: 0;
+    }
   }
 }
 
@@ -255,12 +305,21 @@ nav {
   .connect {
 
     .content-img {
-      height: 20em;
-      background: image-url("map2.png") no-repeat #bcdfe2 0 0;
+      height: 8.8em;
+      background: image-url("map.png") no-repeat #d5ebed 0 0;
       background-position: center;
       background-size: cover;
       position: relative;
       background-size: 100%;
+    }
+
+    .san-francisco {
+      font-size: 0.7em;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 3em;
+      font-family: "Brevia", helvetica, san-serif;
+      color: #999999;
     }
 
     p {
@@ -269,11 +328,21 @@ nav {
   }
 }
 
-.about, .connect {
+.about {
   text-align: left;
 
   .content {
     padding-left: 2.5em;
+  }
+
+  .headline {
+    color: #4d4d4d;
+    font-size: 3.125em;
+    line-height: 1em;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 0.6em 0;
+    font-family: $font-stack-sec;
   }
 }
 
@@ -285,13 +354,20 @@ nav {
 }
 
 .contact-info {
-  margin-top: 4.5em; /* 100px / 16px */
+  margin-top: 1em;
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+      @include active;
+    }
+  }
 }
 
-@media only screen and (max-width: 320px){
-  .contact-info {
-    margin: 0;
-  }
+@media only screen and (max-width: 900px){
+  .contact-info {}
 }
 
 
@@ -373,11 +449,11 @@ nav {
   line-height: 1.5em;
   text-align: left;
   background-color: #fff;
-  padding: 25px;
+  padding: 1.5625em;
 
   .title {
     font-family: $font-stack-sec;
-    font-size: 22px;
+    font-size: 1.375em;
     color: $secondary-color;
   }
 
@@ -391,6 +467,27 @@ nav {
   p {
     color: $secondary-color;
     line-height: 1.25em;
+  }
+}
+
+@media only screen and (max-width: 380px){
+  .face.back {
+    @include transform-rotate;
+    @include box-sizing;
+    font-family: $font-stack;
+    display: block;
+    padding: 0;
+    font-size: 0.9375em; /* 15px; */
+    line-height: 1.5em;
+    text-align: left;
+    background-color: #fff;
+    padding: 1.5625em;
+
+    .title {
+      font-family: $font-stack-sec;
+      font-size: 1.25em;
+      color: $secondary-color;
+    }
   }
 }
 
@@ -424,6 +521,7 @@ a.btn {
 }
 
 .project_description {
+
   p {
     margin-bottom: 1.25em;
   }
@@ -515,15 +613,71 @@ a.btn {
   }
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 400px){
   .prev{
     a{
-      background: none;
+      display: none;
     }
   }
   .next{
     a{
-      background: none;
+      display: none;
+    }
+  }
+}
+
+.prev2 {
+    a{
+      display: none;
+    }
+  }
+  .next2 {
+    a{
+      display: none;
+    }
+  }
+
+
+@media only screen and (max-width: 400px){
+
+  .prev2, .next2 {
+    a {
+      @include border-radius(3px);
+      font-family: $font-stack-sec;
+      width: 100px;
+      margin: 0;
+      font-size: 0.8em;
+      line-height: 1.5em;
+      padding: 15px 12px 15px 12px;   
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      display: block;
+    }
+  }
+
+  .prev2 {
+    a {
+      @include border-radius(3px);
+      background: image-url("arrows_prev_white.png") $blue no-repeat 15px center;
+      text-align: right;
+
+      &:hover {
+      background: image-url("arrows_prev_white.png") $blue-hover no-repeat 15px center;
+      
+      }    
+    }
+  }
+
+  .next2 {
+    a {
+      @include border-radius(3px);
+      background: image-url("arrows_next_white.png") $blue no-repeat 101px center;
+      float: right;
+
+      &:hover {
+      background: image-url("arrows_next_white.png") $blue-hover no-repeat 101px center;
+      }    
     }
   }
 }
@@ -648,6 +802,28 @@ section {
   clear: both;
 }
 
+.about {
+
+  .col {
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    float: none;
+  }
+
+  /*  GROUPING  */
+  .group:before,
+  .group:after {
+    content:"";
+    display:table;
+  }
+  .group:after {
+    clear: both;
+  }
+
+}
+
 /*  GRID OF THREE  */
 .span_3_of_3 {
   width: 100%;
@@ -695,36 +871,5 @@ footer {
   font-size: 0.8125em;
   letter-spacing: 0.05em;
   padding: 1.5384615em;
-
-  .social-icons {
-    float: right;
-    margin-right: 2.5em;
-
-    a {
-      width: 28px;
-      height: 28px;
-      display: block-inline;
-      float: left;
-      margin: 0 10px;
-    }
-
-    .twitter {
-      background: image-url("icon-twitter.png") no-repeat 0 0;
-    }
-
-    .linkedin {
-      background: image-url("icon-linkedin.png") no-repeat 0 0;
-    }
-
-    .dribbble {
-      background: image-url("icon-dribbble.png") no-repeat 0 0;
-    }
-  }
-  @media only screen and (max-width: 640px){
-    .social-icons {
-      float: none;
-      margin-top: 0.625em;
-    }
-  }
 }
 
