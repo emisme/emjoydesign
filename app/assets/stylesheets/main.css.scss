@@ -331,9 +331,7 @@ nav {
 .about {
   text-align: left;
 
-  .content {
-    padding-left: 2.5em;
-  }
+  .content {}
 
   .headline {
     color: #4d4d4d;
@@ -345,6 +343,27 @@ nav {
     font-family: $font-stack-sec;
   }
 }
+
+.diamond {
+   width: 0.6em; 
+   height: 0.6em; 
+   background: $red;
+   /* Rotate */
+   -webkit-transform: rotate(-45deg);
+   -moz-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+   /* Rotate Origin */
+   -webkit-transform-origin: 0 100%;
+   -moz-transform-origin: 0 100%;
+   -ms-transform-origin: 0 100%;
+   -o-transform-origin: 0 100%;
+   transform-origin: 0 100%;
+   margin: 50px auto 0;
+   position: relative;
+}
+
 
 .contact-labels {
   font-family: $font-stack-sec;
