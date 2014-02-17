@@ -231,10 +231,12 @@
 <script type='text/javascript'>
   $(document).ready(function(){
 
+    setTimeout(function(){
     var section = getParameterByName('section');
-    $('html, body').animate({
-        scrollTop: ($('#' + section).offset().top)
-    },900);
+      $('html, body').animate({
+          scrollTop: ($('#' + section).offset().top - 140)
+      },900);
+    },300);
 
     function getParameterByName(name) {
         name        = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
