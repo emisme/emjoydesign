@@ -42,10 +42,14 @@
 <script>
 $(document).ready(function() {
   $('#menu-toggle').click(function (e) {
-      $('#menu').toggleClass('open');
-      e.preventDefault();
-      return false;
-    });  
+    $('#menu').addClass('open');
+    e.preventDefault();
+    return false;
+  });
+
+  $('#menu > li').click(function(){
+    $('#menu').removeClass('open');
+  });  
 });
 </script>
 </body>
