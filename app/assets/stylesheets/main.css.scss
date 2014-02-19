@@ -252,9 +252,9 @@ nav {
     font-size: 1.5em;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 4.825em;
     font-family: $font-stack-sec;
     color: $third-color;
+    padding-top: 5em;
   }
 
   p {
@@ -296,30 +296,20 @@ nav {
   }
 }
 
-#connect {
-  position: relative;
-  top: 60px;
-}
-
 @media only screen and (max-width: 320px){
   .connect {
+    min-height: 42em;
 
     .content-img {
       height: 8.8em;
-      background: image-url("map.png") no-repeat #d5ebed 0 0;
-      background-position: center;
       background-size: cover;
-      position: relative;
       background-size: 100%;
     }
 
     .san-francisco {
-      font-size: 0.7em;
+      font-size: 1em;
       text-transform: uppercase;
-      text-align: center;
-      padding-top: 3em;
-      font-family: "Brevia", helvetica, san-serif;
-      color: #999999;
+      padding-top: 2.25em;
     }
 
     p {
@@ -691,7 +681,6 @@ a.btn {
 
 
 @media only screen and (max-width: 400px){
-
   .prev2, .next2 {
     a {
       @include border-radius(3px);
@@ -760,53 +749,20 @@ section {
 
 @media only screen and (max-width: 760px){
   section {
-    text-align: center;
-    clear: both;
-    padding: 0;
-    margin: 0 0 6.25em 0; /* 100px / 16px */
 
-    .content {
-      max-width: 90%;
-      min-height: 39em;
-      margin: 0 auto;
+    .content {    
       padding: 0 1.5em; 
-      clear: both;
-      position: relative;
     }
 
     .content2 {
-      max-width: 90%;
-      margin: 0 auto;
       padding: 0 1.5em;
-      clear: both;
-      position: relative;
     }
   }
 }
 
 @media only screen and (max-width: 320px){
   section {
-    text-align: center;
-    clear: both;
-    padding: 0;
     margin: 0 0 4em 0; /* 100px / 16px */
-
-    .content {
-      max-width: 90%;
-      min-height: 39em;
-      margin: 0 auto;
-      padding: 0 1.5em; 
-      clear: both;
-      position: relative;
-    }
-
-    .content2 {
-      max-width: 90%;
-      margin: 0 auto;
-      padding: 0 1.5em;
-      clear: both;
-      position: relative;
-    }
   }
 }
 
@@ -911,8 +867,6 @@ section {
   text-align: center;
 }
 
-
-
 footer {
   background-color: #333;
   color: #666;
@@ -924,4 +878,31 @@ footer {
   letter-spacing: 0.05em;
   padding: 1.5384615em;
 }
+
+/*   Navigation position   */
+
+#connect {
+    position: relative;
+    top:70px;
+  }
+
+@media only screen and (max-width: 320px){ 
+  #connect {
+    position: relative;
+    top: 90px;
+  }
+
+  #about {
+    position: relative;
+    top: 50px;
+  }
+
+  #projects {
+    position: relative;
+    top: 40px;
+  }
+}
+
+
+
 
