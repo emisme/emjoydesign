@@ -13,6 +13,7 @@
     margin: 0 auto;
 
     .emily-thomas {
+      font-family: $font-stack-sec;
       color: $secondary-color;
       font-size: 3.125em;
       padding: 5.8em 0 0 0;
@@ -33,7 +34,7 @@
       font-size: 1.5em;
       line-height: 6em;
       color: $red;
-      font-weight: 100;
+      font-weight: light;
     }
   }
 }

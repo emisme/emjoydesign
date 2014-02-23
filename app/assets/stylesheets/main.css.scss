@@ -2,6 +2,16 @@
 @import 'variables';
 @import 'mixins';
 
+@font-face {
+  font-family: 'BreviaRegular';
+  src: url('BreviaRegular.eot?') format('eot'), url('BreviaRegular.woff') format('woff'), url('BreviaRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'KievitSlabWebPro';
+  src: url('KievitSlabWebPro.eot?') format('eot'), url('KievitSlabWebPro.woff') format('woff'), url('KievitSlabWebPro.ttf') format('truetype');
+}
+
 body {
   font: normal 100% $font-stack;
   line-height: $line-height;
