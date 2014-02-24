@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: 'BreviaRegular';
-  src: url('BreviaRegular.eot?') format('eot'), url('BreviaRegular.woff') format('woff'), url('BreviaRegular.ttf') format('truetype');
+  src: font-url('BreviaRegular.eot?') format('eot'), font-url('BreviaRegular.woff') format('woff'), font-url('BreviaRegular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'KievitSlabWebPro';
-  src: url('KievitSlabWebPro.eot?') format('eot'), url('KievitSlabWebPro.woff') format('woff'), url('KievitSlabWebPro.ttf') format('truetype');
+  src: font-url('KievitSlabWebPro.eot?') format('eot'), font-url('KievitSlabWebPro.woff') format('woff'), font-url('KievitSlabWebPro.ttf') format('truetype');
 }
 
 body {
